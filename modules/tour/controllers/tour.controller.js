@@ -3,7 +3,7 @@ import { uploadImageToFirebase } from "../../../services/uploadImage.js";
 
 export const getListTour = async (req, res) => {
     try {
-      const tours = await ProductRepository.getAllTours();
+      const tours = await TourRepository.getAllTours();
       res.status(200).json({ success: true, data: tours});
     } catch (error) {
       res.status(500).json({ success: false, message: error.message });
@@ -28,7 +28,7 @@ export const createTour = async (req, res) => {
         image_url: imageUrl,
         rating: req.body.rating,
         is_hot: req.body.is_hot,
-        collection: req.body.collection,
+        collection_id: req.body.collection,
         list_vehicle: req.body.list_vehicle
       };
       const newTour = await TourRepository.create(tour);

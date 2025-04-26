@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "NODE_OPTIONS=--openssl-legacy-provider node server.js",
+    "start": "node server.js", 
     "dev": "NODE_OPTIONS=--openssl-legacy-provider nodemon server.js",
     "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "nodemon": "nodemon server.js"

@@ -1,5 +1,5 @@
-import DiscountRepository from "../repository/discount.repository";
-import Tour from "../../tour/models/tour.js";
+import DiscountRepository from "../repository/discount.repository.js";
+//import Tour from "../../tour/models/tour.js";
 
 export const getListDiscount = async (req, res) => {
     try {
@@ -27,7 +27,7 @@ export const getListDiscountByTour = async (req, res) => {
   export const createDiscount = async (req, res) => {
     try {
         const discount = {
-            tour_id: req.body.tour_id,
+            tour_id: req.body.tour,
             price: req.body.price,
             
           };

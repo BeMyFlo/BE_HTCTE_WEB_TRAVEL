@@ -22,10 +22,6 @@ const schema = new Schema(
             type: Number,
             required: true,
         },
-        discount_price: {
-            type: Number,
-            required: true,
-        },
         list_vehicle: {
             type: String,
             required: true
@@ -37,7 +33,7 @@ const schema = new Schema(
         },
         rating: {
             type: Number,
-            required: true
+            
         },
         is_hot: {
             type: Boolean,

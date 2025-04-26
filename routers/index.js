@@ -1,4 +1,4 @@
-import userRouter from "../modules/user/user.routes.js";
+//import userRouter from "../modules/user/user.routes.js";
 import productRouter from "../modules/product/product.routes.js";
 import tourRouter from "../modules/tour/tour.routes.js";
 import discountRouter from "../modules/discount/discount.routes.js";
